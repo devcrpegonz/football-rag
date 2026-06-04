@@ -3,7 +3,7 @@ services:
     image: php:8.3-cli
     working_dir: /var/www/html
     volumes:
-      - ../app:/var/www/html
+      - ./app:/var/www/html
     depends_on:
       - db
       - redis
