@@ -9,7 +9,7 @@ services:
       - redis
 
   db:
-    image: postgres:16
+    image: pgvector/pgvector:pg16
     environment:
       POSTGRES_DB: football_rag
       POSTGRES_USER: football
