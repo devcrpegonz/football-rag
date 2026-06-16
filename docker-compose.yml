@@ -1,6 +1,7 @@
 services:
   app:
-    image: php:8.3-cli
+    build: .
+    command: tail -f /dev/null
     working_dir: /var/www/html
     volumes:
       - ./app:/var/www/html
