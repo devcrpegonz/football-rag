@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('document_id')->constrained();
             $table->text('text');
-            $table->addColumn('vector', 'embedding', ['dimensions' => 1536]);
+            $table->addColumn('vector', 'embedding', ['dimensions' => 1536])->nullable();
             $table->timestamps();
         });
     }
