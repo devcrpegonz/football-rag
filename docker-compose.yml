@@ -3,6 +3,8 @@ services:
     build: .
     command: tail -f /dev/null
     working_dir: /var/www/html
+    ports: 
+      - "8000:8000"
     volumes:
       - ./app:/var/www/html
     depends_on:
